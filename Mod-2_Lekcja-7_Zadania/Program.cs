@@ -1,5 +1,5 @@
 ﻿// Zadanie 1
-/*
+
 Console.WriteLine("Algorytm porównujący dwie liczby a i b");
 Console.WriteLine("Podaj liczbę a");
 int a = int.Parse(Console.ReadLine());
@@ -256,7 +256,7 @@ switch (numerDniaTygodnia)
 }
 
 Console.WriteLine(dzienTygodnia);
-*/
+
 // Zadanie 13
 
 Console.WriteLine("Prosta wersja kalkulatora.");
