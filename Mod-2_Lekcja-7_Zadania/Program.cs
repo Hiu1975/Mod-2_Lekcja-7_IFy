@@ -40,7 +40,6 @@ else
 Console.WriteLine("Algorytm spr. czy podany rok jest przestępny");
 Console.WriteLine("podaj rok");
 int rok = int.Parse(Console.ReadLine());
-Int64 roczek = Int64.Parse(Console.ReadLine());
 if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0)
 {
     Console.WriteLine($"Rok {rok} jest rokiem przestępnym");
