@@ -106,14 +106,15 @@ Console.WriteLine($"Największą liczbą spośród [{x}, {y}, {z}] jest liczba {
 
 Console.WriteLine("Algorytm spr., czy kandydat może ubiegać się o miejsce na studiach ");
 Console.WriteLine("Podaj swój wynik z Matury z przedmiotów: ");
-Console.WriteLine("Mathematics = ");
+Console.WriteLine("Matematyki = ");
 int mathematics = int.Parse(Console.ReadLine());
-Console.WriteLine("Physics =");
+Console.WriteLine("Fizyki =");
 int physics = int.Parse(Console.ReadLine());
-Console.WriteLine("Chemistry =");
+Console.WriteLine("Chemii =");
 int chemistry = int.Parse(Console.ReadLine());
 
-if (((mathematics > 70 && physics > 55 && chemistry > 45) && (mathematics + physics + chemistry > 180)) || ((mathematics + physics) > 150 || (mathematics + chemistry) > 150))
+if (((mathematics > 70 && physics > 55 && chemistry > 45) && (mathematics + physics + chemistry > 180)) 
+    || (mathematics + physics > 150 || mathematics + chemistry > 150))
 {
     Console.WriteLine("Kandytat dopuszczony do rekrutacji");
 }
