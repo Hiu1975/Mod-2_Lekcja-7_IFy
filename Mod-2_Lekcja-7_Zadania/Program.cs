@@ -305,8 +305,3 @@ else
 {
     Console.WriteLine($"Twój wynik to: {wynikOperacji}");
 }
-// cos robie
-for (int i=1; i < 5; i++)
-{
-    Console.WriteLine("");
-}
