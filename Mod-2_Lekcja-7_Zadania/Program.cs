@@ -2,11 +2,11 @@
 
 Console.WriteLine("Algorytm porównujący dwie liczby a i b");
 Console.WriteLine("Podaj liczbę a");
-int a = int.Parse(Console.ReadLine());
+int numberA = int.Parse(Console.ReadLine());
 Console.WriteLine("Podaj liczbę b");
-int b = int.Parse(Console.ReadLine());
-string wynik = (a == b) ? $"{a} i {b} są równe" : $"{a} i {b} nie są równe";
-Console.WriteLine(wynik);
+int numberB = int.Parse(Console.ReadLine());
+string result = (numberA == numberB) ? $"{numberA} i {numberB} są równe" : $"{numberA} i {numberB} nie są równe";
+Console.WriteLine(result);
 
 // Zadanie 2
 
@@ -39,23 +39,23 @@ else
 
 Console.WriteLine("Algorytm spr. czy podany rok jest przestępny");
 Console.WriteLine("podaj rok");
-int rok = int.Parse(Console.ReadLine());
-if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0)
+int leapYearYesNo = int.Parse(Console.ReadLine());
+if ((leapYearYesNo % 4 == 0 && leapYearYesNo % 100 != 0) || leapYearYesNo % 400 == 0)
 {
-    Console.WriteLine($"Rok {rok} jest rokiem przestępnym");
+    Console.WriteLine($"Rok {leapYearYesNo} jest rokiem przestępnym");
 }
 else
 {
-    Console.WriteLine($"Rok {rok} nie jest rokiem przestępnym");
+    Console.WriteLine($"Rok {leapYearYesNo} nie jest rokiem przestępnym");
 }
 
 // Zadanie 5
 
 Console.WriteLine("Algorytm spr. czy podany wiek uprawnia do kandydowania na prominetne stołki państwowe");
 Console.WriteLine("Podaj swój wiek");
-int wiek = int.Parse(Console.ReadLine());
+int userAge = int.Parse(Console.ReadLine());
 string status;
-status = wiek switch
+status = userAge switch
 {
     >= 18 and < 21 => "premiera",
     >= 21 and < 30 => "posła",
@@ -69,17 +69,17 @@ Console.WriteLine($"Możesz kandydować na {status}.");
 
 Console.WriteLine("Program przypisuje Ci kategorie w zależności od wzrostu");
 Console.WriteLine("Podaj swój wzrost w cm");
-int wzrost = int.Parse(Console.ReadLine());
-string kategoria = "";
-kategoria = wzrost switch
+int height = int.Parse(Console.ReadLine());
+string category = "";
+kategoria = height switch
 {
     < 110 => "kurduplem",
     >= 110 and <= 140 => "karłem",
     >= 141 and <= 175 => "średniego wzrostu",
     >= 176 and <= 199 => "wysoki",
-    _ => "mutantem, normalni ludzi tacy nie rosną"
+    _ => "mutantem, normalni ludzie tacy nie rosną"
 };
-Console.WriteLine($"Jesteś {kategoria}.");
+Console.WriteLine($"Jesteś {category}.");
 
 
 // Zadanie 7
@@ -91,16 +91,16 @@ x = int.Parse(Console.ReadLine());
 y = int.Parse(Console.ReadLine());
 z = int.Parse(Console.ReadLine());
 
-int najwieksza = x;
-if (y >= najwieksza)
+int maksimum = x;
+if (y >= maksimum)
 {
-    najwieksza = y;
+    maksimum = y;
 }
-else if (z >= najwieksza)
+else if (z >= maksimum)
 {
-    najwieksza = z;
+    maksimum = z;
 }
-Console.WriteLine($"Największą liczbą spośród [{x}, {y}, {z}] jest liczba {najwieksza}");
+Console.WriteLine($"Największą liczbą spośród [{x}, {y}, {z}] jest liczba {maksimum}");
 
 // Zadanie 8
 
