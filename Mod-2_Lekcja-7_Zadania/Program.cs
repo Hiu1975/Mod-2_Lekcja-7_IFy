@@ -224,39 +224,39 @@ Console.WriteLine(ocenaUczniaOpisowa);
 
 Console.WriteLine("Program pobiera numer dnia tygodnia i wyświetla jego nazwę.");
 Console.Write("Podaj numer dnia tygodnia");
-byte.TryParse(Console.ReadLine(), out byte numerDniaTygodnia);
-string dzienTygodnia = "";
+byte.TryParse(Console.ReadLine(), out byte numberOfDay);
+string dayOfWeek = "";
 
 
-switch (numerDniaTygodnia)
+switch (numberOfDay)
 {
     case 1:
-        dzienTygodnia = "Poniedziałek";
+        dayOfWeek = "Poniedziałek";
         break;
     case 2:
-        dzienTygodnia = "Wtorek";
+        dayOfWeek = "Wtorek";
         break;
     case 3:
-        dzienTygodnia = "Środa";
+        dayOfWeek = "Środa";
         break;
     case 4:
         dzienTygodnia = "Czwartek";
         break;
     case 5:
-        dzienTygodnia = "Piątek";
+        dayOfWeek = "Piątek";
         break;
     case 6:
-        dzienTygodnia = "Sobota";
+        dayOfWeek = "Sobota";
         break;
     case 7:
-        dzienTygodnia = "Niedziela";
+        dayOfWeek = "Niedziela";
         break;
     default:
         Console.WriteLine("Podałeś złą ocenę ucznia (spoza skali 1-6)");
         break;
 }
 
-Console.WriteLine(dzienTygodnia);
+Console.WriteLine(dayOfWeek);
 
 // Zadanie 13
 
